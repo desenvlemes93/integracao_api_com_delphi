@@ -81,7 +81,7 @@ var
   JsonObject: TJSONObject;
 begin
   // Criar instâncias do TRESTClient, TRESTRequest e TRESTResponse
-  RestClient := TRESTClient.Create('http://192.168.56.1:8080/api/produtos');
+  RestClient := TRESTClient.Create('http://192.168.3.4:8080/api/produtos');
   RestRequest := TRESTRequest.Create(nil);
   RestResponse := TRESTResponse.Create(nil);
 

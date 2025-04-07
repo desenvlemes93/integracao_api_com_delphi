@@ -32,6 +32,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
 
@@ -70,13 +71,7 @@ begin
     cdsProdutopreco.AsFloat := listaProduto.Items[i].Preco;
     cdsProdutodesconto.AsFloat := listaProduto.Items[i].Desconto;
     cdsProduto.Post;
-
-
    end;
-
-
-
-
 
   finally
     serviceProduto.Free;
@@ -110,6 +105,12 @@ begin
 
  end;
 
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  cdsProduto.EmptyDataSet;
+  BuscarTodosProdutos;
 end;
 
 procedure TForm1.DBGrid1CellClick(Column: TColumn);

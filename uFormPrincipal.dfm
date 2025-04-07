@@ -64,12 +64,13 @@ object Form1: TForm1
     Height = 25
     Caption = 'Buscar'
     TabOrder = 1
+    OnClick = Button2Click
   end
   object edtId: TEdit
     Left = 8
     Top = 88
     Width = 65
-    Height = 25
+    Height = 23
     Enabled = False
     TabOrder = 2
   end
@@ -77,14 +78,14 @@ object Form1: TForm1
     Left = 8
     Top = 140
     Width = 187
-    Height = 25
+    Height = 23
     TabOrder = 3
   end
   object edtEstoque: TEdit
     Left = 201
     Top = 140
     Width = 42
-    Height = 25
+    Height = 23
     TabOrder = 4
     Text = '0'
   end
@@ -92,7 +93,7 @@ object Form1: TForm1
     Left = 249
     Top = 140
     Width = 42
-    Height = 25
+    Height = 23
     TabOrder = 5
     Text = '0'
   end
@@ -148,6 +149,7 @@ object Form1: TForm1
     end
   end
   object DataSource1: TDataSource
+    AutoEdit = False
     DataSet = cdsProduto
     Left = 568
     Top = 96
